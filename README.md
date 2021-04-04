@@ -27,3 +27,4 @@ Camera  | 48MP(Primary),12MP(Telephoto), 16MP(Ultrawide), dual-LED (dual tone) f
 
 
 ![Xiaomi Mi 9](https://xiaomi-mi.com/uploads/CatalogueImage/mi9%20(3)_17409_1550674081.jpg "Xiaomi Mi 9 in black")
+# device_xiaomi_cepheus
