@@ -27,7 +27,6 @@ import android.util.Log;
 import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.utils.FileUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
@@ -45,7 +44,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         PendingResult pendingResult = goAsync();
         DiracUtils.initialize(context);
-        DozeUtils.onBootCompleted(context);
 
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_KEY, false);
         FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "1" : "0");
