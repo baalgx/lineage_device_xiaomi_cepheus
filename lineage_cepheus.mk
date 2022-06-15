@@ -21,15 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from cepheus device
 $(call inherit-product, device/xiaomi/cepheus/device.mk)
 
-# Inherit some common PEX stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# PixelExtended Stuff
+# LineagePlus flags
+TARGET_INCLUDE_GAPPS := true
+TARGET_INCLUDE_LAWNCHAIR = true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_SUPPORTS_QUICK_TAP := true
+PLUS_MAINTAINER := balgxmr
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
